@@ -3,6 +3,7 @@ require "logstash/inputs/base"
 require "logstash/namespace"
 require "stud/interval"
 require "socket" # for Socket.gethostname
+require "mailchimp/api"
 
 # Mailchimp integration
 
