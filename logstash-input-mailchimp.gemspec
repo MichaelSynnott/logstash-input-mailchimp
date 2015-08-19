@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name = 'logstash-input-mailchimp'
-  s.version         = '0.1.3'
+  s.version         = '0.1.4'
   s.licenses = ['Apache License (2.0)']
   s.summary = "Pulls data from MailChimp at a definable interval and inputs it."
   s.description = "Pulls data from MailChimp at a definable interval and inputs it."
@@ -21,6 +21,6 @@ Gem::Specification.new do |s|
   s.add_runtime_dependency "logstash-core", '>= 1.4.0', '< 2.0.0'
   s.add_runtime_dependency 'logstash-codec-plain'
   s.add_runtime_dependency 'stud'
+  s.add_runtime_dependency 'mailchimp-api'
   s.add_development_dependency 'logstash-devutils'
-  s.add_development_dependency 'mailchimp-api'
 end
