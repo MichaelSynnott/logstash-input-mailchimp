@@ -3,6 +3,7 @@ require "logstash/inputs/base"
 require "logstash/namespace"
 require "stud/interval"
 require "socket" # for Socket.gethostname
+require "mailchimp"
 require "mailchimp/api"
 
 # Mailchimp integration
@@ -17,7 +18,7 @@ class LogStash::Inputs::MailChimp < LogStash::Inputs::Base
 
   config :apikey, :validate => :string, :required => true
 
-  config :mailchimplistid, :validate => :string, :required => true
+  config :listid, :validate => :string, :required => true
 
   public
   def register
@@ -29,7 +30,7 @@ class LogStash::Inputs::MailChimp < LogStash::Inputs::Base
     mailchimp = Mailchimp::API.new(@apikey)
 
     Stud.interval(@interval) do
-      members = mailchimp.lists.members(@mailchimplistid)['data']
+      members = mailchimp.lists.members(@listid)['data']
       event = LogStash::Event.new("message" => members, "host" => @host)
       decorate(event)
       queue << event

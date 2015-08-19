@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name = 'logstash-input-mailchimp'
-  s.version         = '0.1.4'
+  s.version         = '0.1.6'
   s.licenses = ['Apache License (2.0)']
   s.summary = "Pulls data from MailChimp at a definable interval and inputs it."
   s.description = "Pulls data from MailChimp at a definable interval and inputs it."
