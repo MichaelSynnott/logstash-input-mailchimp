@@ -14,7 +14,7 @@ class LogStash::Inputs::MailChimp < LogStash::Inputs::Base
   # If undefined, Logstash will complain, even if codec is unused.
   default :codec, "json"
 
-  config :interval, :validate => :number, :default => 1, :required => true
+  config :interval, :validate => :number, :default => 3600, :required => true
 
   config :apikey, :validate => :string, :required => true
 

@@ -105,6 +105,7 @@
     <orderEntry type="library" scope="PROVIDED" name="hitimes (v1.2.2, jruby-9.0.0.0-p0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="http (v0.6.4, jruby-9.0.0.0-p0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="http_parser.rb (v0.6.0, jruby-9.0.0.0-p0) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="httparty (v0.13.5, jruby-9.0.0.0-p0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="i18n (v0.6.9, jruby-9.0.0.0-p0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="insist (v1.0.0, jruby-9.0.0.0-p0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="jls-grok (v0.10.12, jruby-9.0.0.0-p0) [gem]" level="application" />
@@ -119,6 +120,7 @@
     <orderEntry type="library" scope="PROVIDED" name="logstash-core (v1.5.3, jruby-9.0.0.0-p0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="logstash-devutils (v0.0.15, jruby-9.0.0.0-p0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="mail (v2.5.3, jruby-9.0.0.0-p0) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="mailchimp (v0.0.9, jruby-9.0.0.0-p0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="mailchimp-api (v2.0.6, jruby-9.0.0.0-p0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="march_hare (v2.1.2, jruby-9.0.0.0-p0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="memoizable (v0.4.2, jruby-9.0.0.0-p0) [gem]" level="application" />
@@ -131,6 +133,7 @@
     <orderEntry type="library" scope="PROVIDED" name="mocha (v1.1.0, jruby-9.0.0.0-p0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="msgpack-jruby (v1.4.1, jruby-9.0.0.0-p0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="multi_json (v1.11.2, jruby-9.0.0.0-p0) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="multi_xml (v0.5.5, jruby-9.0.0.0-p0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="multipart-post (v2.0.0, jruby-9.0.0.0-p0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="murmurhash3 (v0.1.6, jruby-9.0.0.0-p0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="naught (v1.0.0, jruby-9.0.0.0-p0) [gem]" level="application" />
