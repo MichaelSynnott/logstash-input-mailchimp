@@ -11,7 +11,6 @@ require "mailchimp/api"
 class LogStash::Inputs::MailChimp < LogStash::Inputs::Base
   config_name "mailchimp"
 
-  # If undefined, Logstash will complain, even if codec is unused.
   default :codec, "json"
 
   config :interval, :validate => :number, :default => 3600, :required => true
@@ -23,7 +22,7 @@ class LogStash::Inputs::MailChimp < LogStash::Inputs::Base
   public
   def register
     @host = Socket.gethostname
-  end # def register
+  end
 
   def run(queue)
 
@@ -31,10 +30,12 @@ class LogStash::Inputs::MailChimp < LogStash::Inputs::Base
 
     Stud.interval(@interval) do
       members = mailchimp.lists.members(@listid)['data']
-      event = LogStash::Event.new("message" => members, "host" => @host)
-      decorate(event)
-      queue << event
-    end # loop
-  end # def run
+      members.each do |member|
+        event = LogStash::Event.new("message" => member, "host" => @host)
+        decorate(event)
+        queue << event
+      end
+    end
+  end
 
-end # class LogStash::Inputs::MailChimp
+end
