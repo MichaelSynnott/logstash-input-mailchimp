@@ -280,6 +280,7 @@ DEPENDENCIES
   logstash-devutils
   logstash-input-mailchimp!
   mailchimp-api
+  rspec (~> 3.0)
 
 BUNDLED WITH
    1.10.6
